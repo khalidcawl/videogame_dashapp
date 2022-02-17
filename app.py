@@ -38,4 +38,4 @@ def update_output(top_val):
     return plot_altair(top_val)
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    server = app.run_server(debug=True)
