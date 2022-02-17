@@ -2,8 +2,8 @@ import altair as alt
 from dash import Dash, dcc, html, Input, Output
 import pandas as pd
 
-alt.renderers.enable("mimetype")
-alt.data_transformers.enable("data_server")
+# alt.renderers.enable("mimetype")
+# alt.data_transformers.enable("data_server")
 
 sales = pd.read_csv("vgsales.csv")
 
