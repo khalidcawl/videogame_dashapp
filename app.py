@@ -18,6 +18,7 @@ def plot_altair(top_val):
     return chart.to_html()
 
 app = Dash(__name__, external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
+server = app.server
 
 top_values = [5,10,15,20]
 app.layout = html.Div([
@@ -36,4 +37,4 @@ def update_output(top_val):
     return plot_altair(top_val)
 
 if __name__ == '__main__':
-    server = app.run_server(debug=True)
+    app.run_server(debug=True)
