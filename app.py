@@ -21,7 +21,10 @@ app = Dash(__name__, external_stylesheets=['https://codepen.io/chriddyp/pen/bWLw
 server = app.server
 
 top_values = [5,10,15,20]
+
+app.title = "Video Game Sales"
 app.layout = html.Div([
+        html.H1("Video game sales - Top Publishers"),
         dcc.Dropdown(
             id='top_val', value='10',
             options=[{'label': i, 'value': i} for i in top_values]),
